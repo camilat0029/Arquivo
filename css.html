@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /** CSS embutido no código HTML */
+
+        *{
+            margin: 0px; padding: 0px; /** reset */
+        }
+
+        #explicacaoCSS >*{
+            background-color: rgb(215, 186, 241);
+        }
+
+        h1{
+            color: aqua;
+        }
+
+        #explicacaoCSS{
+            border: 1px solid #000;
+        }
+
+        .layouts{
+            color: rgb(203, 150, 250);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="explicacaoCSS">
+        <!--Esse style sempre irá se sobrepor sobre os outros-->
+        <h1 style="color:blue">CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam magni, fugiat porro sit hic impedit nesciunt incidunt soluta cum repellat doloremque possimus delectus aspernatur nam, odit dolore distinctio animi voluptas.</p>
+        <h1>Seletores</h1>
+        <ul>
+            <li>Nome da tag</li>
+            <li>id ou identificador único</li>
+            <li>classe ou categoria</li>
+            <li>universal - *</li>
+            <li>descendente</li>
+            <li>filhos - ></li>
+        </ul>
+    </div>
+
+    <div>
+        <div>
+            <h1>Layouts</h1>
+            <p>Posicionamento de elementos no CSS</p>
+
+            <div>
+                <h1 class="layouts">positions CSS 1 e 2</h1>
+                <p>Posicionamento</p>
+            </div>
+
+            <div>
+                <h1 class="layouts">flex CSS 3</h1>
+                <p>Posionamento linear</p>
+            </div>
+
+            <div>
+                <h1 class="layouts">grid CSS 3</h1>
+                <p>Posicionamento linear</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+</body>
+</html>
