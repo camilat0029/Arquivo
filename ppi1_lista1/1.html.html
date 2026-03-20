@@ -46,6 +46,24 @@
                 border: 2.25px dotted;
             }
 
+            #Tabela_Resumo, caption, th, td{
+                border: 1px solid #000;
+                border-collapse: collapse;
+                font-size: 1.05em;
+            }
+
+            caption{
+                background-color: rgb(105, 238, 191);
+            }
+
+            #Tabela_Resumo th, tr{
+                background-color: rgb(205, 238, 226);
+            }
+
+            #Link{
+                font-size: 1.04em;
+            }
+
         </style>
     </head>
     <body>
@@ -110,6 +128,38 @@
             </dl>
             
         </div>
-        
+
+        <br>
+        <br>
+
+        <table id="Tabela_Resumo">
+            <thead>
+                <caption>Resumo</caption>
+                <tr>
+                    <th>Ano</th>
+                    <th>Acontecimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>1989</b></td>
+                    <td>Tim Berner Lee propôs um modelo abstrato de uma rede de documentos interligados</td>
+                </tr>
+                <tr>
+                    <td><b>1990</b></td>
+                    <td>Desenvolveu-se protocolo HTTP, para ter troca de informação Cliente-Servidor. Implementação do primeiro servidor Http e cliente HTTP</td>
+                </tr>
+                <tr>
+                    <td><b>1990</b></td>
+                    <td>Criação de linguagem HTML para fazer a declaração de documentos</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br>
+        <h3>Referência</h3>
+        <p id="Link">Link da Referência <a href="https://docs.google.com/presentation/d/17MvgWlKSWVY24OS9r-_RAVUWQ2UfYKXvHYMlZQTdTF4/edit?slide=id.g2bc7633ed50_0_1#slide=id.g2bc7633ed50_0_1">AQUI</a></p>
+
     </body>
 </html>

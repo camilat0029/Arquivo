@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    
+
     <title>Questão 2</title>
+
+    <style>
+        #Imagem_Requisicao {
+            width: 600px;
+            border: 1px solid #000;
+        }
+
+        #Imagem_Legenda {
+            width: 600px;
+            text-align: center;
+        }
+
+        #Pesquisa {
+            font-size: 1.1em;
+            width: 240px;
+            text-align: center;
+        }
+
+        #Pesquisa #Local_Pesquisa {
+            width: 210px;
+        }
+
+        #Pesquisa #Buscar {
+            font-size: 1.11em;
+        }
+
+        #Imagens_Exemplos{
+            width: 940px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #Div_Busca, #Div_Img_G, #Div_Img_R{
+            text-align: center;
+            width: 320px;
+        }
+
+        #Imagem_Busca, #Imagem_Res_GET, #Imagem_Res_POST{
+            border: 1px solid #000;
+            display: block;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <h1>Protocolo HTTP</h1>
 
-    <p>O HTTP é um protocolo de comunicação utilizada em uma arquitetura Cliente-Servidor. Assim, <br>quando o cliente faz uma solicitação ao servidor, este protocolo é utilizado nesta comunicação</p>
+    <p>O HTTP é um protocolo de comunicação utilizada em uma arquitetura Cliente-Servidor. Assim, <br>quando o cliente
+        faz uma solicitação ao servidor, este protocolo é utilizado nesta comunicação</p>
 
     <h3>Requisição</h3>
 
-    <p>Ao fazer uma requisição ao servidor, é enviada uma mensagem HTTP, que podem ter ações como <br>por exemplo GET ou POST. E o retorno do servidor após processá-la é uma response HTTP.</p>
+    <p>Ao fazer uma requisição ao servidor, é enviada uma mensagem HTTP, que podem ter ações como <br>por exemplo GET ou
+        POST. E o retorno do servidor após processá-la é uma response HTTP.</p>
     <p>No caso dos servidores WEB, o retorno é um código HTML como uma página.</p>
-    
+
+    <div id="Imagem_Legenda">
+        <img id="Imagem_Requisicao" src="./Imagens_Lista/como-funciona-http (1).jpg" alt="">
+        <span><em>Imagem Ilustrativa de Requisição</em></span>
+    </div>
+
+    <br>
+    <br>
+
+    <h3>Exemplo com HTTP</h3>
+    <div id="Pesquisa">
+        <form action="https://google.com/search" method="get">
+            <label for="">Informe oque deseja Pesquisar</label>
+            <br>
+            <br><input id="Local_Pesquisa" name="q" type="text" placeholder="Digite aqui...">
+            <br>
+            <br><input id="Buscar" type="submit" value="Buscar">
+        </form>
+    </div>
+
+    <br>
+
+    <h3>Imagens de Resultados</h3>
+
+    <div id="Imagens_Exemplos">
+        <div id="Div_Busca">
+            <img id="Imagem_Busca" src="./Imagens_Lista/Arpanet.png" alt="">
+            <span><em>Exemplo de Busca</em></span>
+        </div>
+
+        <div id="Div_Img_G">
+            <img id="Imagem_Res_GET" src="./Imagens_Lista/como-funciona-http (1).jpg" alt="">
+            <span><em>Resultado(response) da busca com GET</em></span>
+        </div>
+
+        <div id="Div_Img_P">
+            <img id="Imagem_Res_POST" src="./Imagens_Lista/como-funciona-http (1).jpg" alt="">
+            <span><em>Resultado(response) da busca com POST</em></span>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
