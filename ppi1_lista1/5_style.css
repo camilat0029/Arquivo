@@ -1,0 +1,36 @@
+html{
+    background-color: #f2f2fe;
+    color: rgb(23, 23, 23);
+    font-family: Arial, sans-serif, Georgia, 'Times New Roman';
+}
+
+table, th, td{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+form input{
+    border-radius: 10px 10px 10px 10px;
+}
+
+form button{
+    background-color: rgb(189, 189, 225);
+}
+
+form button:hover{
+    background-color: rgb(134, 134, 233);
+}
+
+.contato #Navegar_Curriculo:hover{
+    background-color: #4ccb3e;
+}
+
+summary:hover{
+    background-color: #a3a3a3;
+}
+
+details p:hover{
+    background-color: #d1c0c0;
+}
+

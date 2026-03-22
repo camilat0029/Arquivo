@@ -3,6 +3,7 @@
 <head>
     
     <title>Questão 4 - Currículo</title>
+    <link rel="stylesheet" href="5_style.css">
     <style>
 
         #Horarios, caption, th, td{
@@ -52,9 +53,18 @@
             height: 300px ;
         }
 
+        #Menu{
+            border-radius: 5px 5px 5px 5px;
+            width: 180px;
+        }
+
+        details p{
+            width: 230px;
+        }
+
     </style>
 </head>
-<body>
+<body class="curriculo-html">
 
     <h1>Currículo</h1>
 
@@ -175,7 +185,7 @@
     <br>
 
     <details>
-        <summary><strong>Menu de Navegação</strong></summary>
+        <summary id="Menu"><strong>Menu de Navegação</strong></summary>
         <p><a href="#Descricao">Ir para Descrição</a></p>
         <p><a href="#Habilidades">Ir para Habilidades Técnicas</a></p>
         <p><a href="#Formacao">Ir para Formação Acadêmica</a></p>

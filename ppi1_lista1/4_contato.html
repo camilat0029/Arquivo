@@ -3,6 +3,7 @@
 
 <head>
     <title>Questão 4 - Contato</title>
+    <link rel="stylesheet" href="5_style.css">
 
     <style>
         #painel1 {
@@ -23,7 +24,7 @@
         }
 
         #painel1 #painel2 {
-            background-color: #f2eded;
+            background-color: #dfd5d5;
             display: flex;
             margin: auto;
             font-size: 1.2em;
@@ -34,7 +35,13 @@
             align-items: center;
         }
 
+        #Formulario {
+            background-color: #dfd5d5;
+        }
 
+        #Formulario label{
+            background-color: #dfd5d5;
+        }
 
         #Nome {
             width: 635px;
@@ -65,7 +72,6 @@
             display: block;
             margin: auto;
             font-size: 1.3em;
-            background-color: rgb(189, 189, 225);
         }
 
         #Navegar_Curriculo{
@@ -82,7 +88,7 @@
     </style>
 </head>
 
-<body>
+<body class="contato">
 
     <div id="painel1">
 
@@ -92,7 +98,7 @@
 
         <div id="painel2">
 
-            <form action="">
+            <form id="Formulario" action="">
                 <label for="">Nome:</label>
                 <input id="Nome" type="text" placeholder="Insira o seu nome..." required>
 
