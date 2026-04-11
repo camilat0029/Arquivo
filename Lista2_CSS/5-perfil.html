@@ -1,15 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5-Perfil</title>
 
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p,li {
+            font-size: 0.9em;
+        }
+
+        .container_perfil {
+            border: 1px solid rgb(61, 61, 61);
+            position: fixed;
+            display: inline-block;
+            top: 0%;
+        }
+
+        .informacoes {
+            position: fixed;
+            left: 30px;
+        }
+
+        .conteudo{
+            position: relative;
+            left: 25px;
+        }
+
+        .conteudo, li{
+            line-height: 3vh;
+        }
+
+        #dados_perfil {
+            width: 300px;
+            height: 600px;
+            background-color: rgb(61, 61, 61);
+            color: white;
+        }
+
+        #foto_perfil {
+            position: relative;
+            left: 27px;
+            top: 20px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        #dados_perfil hr {
+            width: 278px;
+        }
+
+        #informacoes_curriculo {
+            border-left: 0px;
+            left: 20%;
+            width: 700px;
+            height: 600px;
+
+        }
+
+        #informacoes_curriculo hr{
+            position: absolute;
+            width: 673px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    
+
+
+    <div id="dados_perfil" class="container_perfil">
+
+        <div class="informacoes">
+            <img id="foto_perfil" src="/Imagens/Fundo_Mar.jpg" alt="">
+            <br><br>
+
+            <h3>Pessoal</h3>
+            <hr>
+            <p>
+                <strong>Nome</strong><br>
+                Joana Barbosa <br><br>
+
+                <strong>Endereço</strong><br>
+                Rua da Paz, 250 <br>
+                100-011 Lisboa <br><br>
+
+                <strong>Número de telefone</strong><br>
+                9630002121 <br><br>
+
+                <strong>Email</strong><br>
+                exemplos@cvmaker.pt <br><br>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="informacoes_curriculo" class="container_perfil">
+
+        <div>
+            <h1 class="conteudo">Joana Barbosa</h1>
+            <hr class="conteudo">
+            <p class="conteudo"><br> Uma marketer digital com sentido de missão com mais de três anos de experiência em conduzir <br> iniciativas
+                promocionais. Sou uma especialista em online marketing, lead generation e nurturing. Tenho <br> uma
+                comunicação exemplar, aptidões interpessoais e trabalho bem sobre pressão de forma a atintir os
+                objetivos.</p>
+
+            <h2 class="conteudo">Experiencia profissional</h2>
+            <hr class="conteudo">
+            <h3 class="conteudo"> <br>Junior SEO Marketer</h3>
+            <span class="conteudo"><em>Cyanca,Lisboa</em></span>
+            
+            <ul>
+            <li>Página on/off SEO</li>
+                <li>Estratégias de linkbuilding</li>
+                <li>Criação de conteúdo relevante</li>
+                <li>Trabalho com ferramentas online. Ahrels, Google Analytics, Google Search Console, Google Adwords
+                </li>
+            </ul>
+
+            <h3 class="conteudo">Assistente de Vendas</h3>
+            <span class="conteudo"><em>Salsa, Lisboa</em></span>
+            <ul>
+                <li>Contribuição para os objetivos de vendas</li>
+                <li>Gestão de inventário</li>
+                <li>Apoio a clientes</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
 </body>
 
 </html>
