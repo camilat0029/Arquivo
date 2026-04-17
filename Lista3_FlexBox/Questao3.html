@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Questão 3 - FlexBox</title>
+
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            height: 500px;
+            border: 1px solid black;
+            justify-content: space-around;
+        }
+
+        .circulo{
+            background-color: antiquewhite;
+            border: 1px solid rgb(129, 124, 124);
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+        }
+
+        #imagem1{
+            background-image: url("/Imagens/Gato_1.jpg");
+            background-size: 75px;
+        }
+
+        #imagem2{
+            background-image: url("/Imagens/Gato_2.jpg");
+            background-size: 75px;
+        }
+
+        #imagem3{
+            background-image: url("/Imagens/Gato_3.jpg");
+            background-size: 75px;
+        }
+
+        #imagem4{
+            background-image: url("/Imagens/Gato_4.jpg");
+            background-size: 80px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box-1">
+            <div id="imagem1" class="circulo"></div>
+        </div>
+        <div class="box" id="box-2">
+            <div id="imagem2" class="circulo"></div>
+        </div>
+
+        <div class="box" id="box-3">
+            <div id="imagem3" class="circulo"></div>
+        </div>
+        <div class="box" id="box-4">
+            <div id="imagem4" class="circulo"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

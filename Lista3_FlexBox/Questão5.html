@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5 - FlexBox</title>
+
+    <style>
+        *{margin: 0px}
+
+        .container{
+            display: flex;
+            position: relative;
+            height: 100vh;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 3;
+        }
+
+        .box{
+            position: relative;
+        }
+
+        #box-1, #box-5{
+            background-color: rgb(0, 202, 17);
+        }
+
+        #box-1, #box-5{
+            flex-grow: 1;
+        }
+
+        #box-2{
+            flex-grow: 3;
+        }
+
+        #box-3{
+            background-color: rgb(247, 247, 212);
+            flex-grow: 1;
+        }
+
+        #box-4{
+            background-color: rgb(165, 190, 165);
+            flex-grow: 1;
+        }
+
+        span{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box" id="box-1">
+            <span>Header</span></div>
+        <div class="container2">
+            <div class="box" id="box-2">
+                <span>Article</span></div>
+            <div class="box" id="box-3">
+                <span>Aside</span></div>
+            <div class="box" id="box-4">
+                <span>Nav</span></div>
+        </div>
+        <div class="box" id="box-5">
+            <span>Footer</span></div>
+    </div>
+
+</body>
+</html>
