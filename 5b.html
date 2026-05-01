@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5b - Layout Responsivo</title>
+
+
+    <style>
+
+        * {margin: 0px;}
+
+        .container {
+            display: grid;
+            height: 97vh;
+            padding: 10px;
+
+            grid-template-rows: 5fr 1fr 5fr 4fr;
+            grid-template-columns: 3fr 2fr 2fr 1fr;
+
+            grid-template-areas: "laranja1 rosa azul1 azul1"
+                "laranja1 rosa verde branco"
+                "azul2 rosa verde branco"
+                "laranja2 laranja2 verde branco";
+
+            gap: 10px;
+        }
+
+        @media (max-width:600px) {
+
+            .container {
+                display: grid;
+                height: 100vh;
+
+                grid-template-rows: 4fr 3fr 4fr 3fr 3fr 4fr 2fr;
+                grid-template-columns: 1fr;
+
+                grid-template-areas: "laranja1"
+                    "azul1"
+                    "rosa"
+                    "azul2"
+                    "laranja2"
+                    "verde"
+                    "branco";
+                gap: 10px;
+            }
+
+            #box7 {
+                display: flex;
+
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                
+                justify-items: baseline;
+                align-items: baseline;
+                gap: 25px;
+            }
+        }
+
+
+        .box {
+            display: grid;
+        }
+
+        #box1 {
+            background-color: rgb(255, 169, 64);
+            grid-area: laranja1;
+        }
+
+
+        #box2 {
+            background-color: rgb(245, 184, 165);
+            grid-area: rosa;
+        }
+
+
+        #box3 {
+            background-color: rgb(202, 224, 222);
+            grid-area: azul1;
+        }
+
+
+        #box4 {
+            background-color: rgb(202, 224, 222);
+            grid-area: azul2;
+        }
+
+
+        #box5 {
+            background-color: rgb(187, 202, 109);
+            grid-area: verde;
+        }
+
+
+        #box6 {
+            background-color: rgb(255, 169, 64);
+            grid-area: laranja2;
+        }
+
+
+        #box7 {
+            grid-area: branco;
+            padding: 10px;
+            justify-content: center;
+            align-items: baseline;
+
+
+            grid-template-areas: "vermelho"
+                "rosa2"
+                "verde2"
+                "lilas";
+        }
+
+
+        .circulo {
+            display: grid;
+            border-radius: 100%;
+            width: 13vh;
+            height: 13vh;
+        }
+
+        #circulo1 {
+            background-color: rgb(241, 149, 102);
+            grid-area: vermelho;
+        }
+
+
+        #circulo2 {
+            background-color: rgb(212, 174, 174);
+            grid-area: rosa2;
+        }
+
+
+        #circulo3 {
+            background-color: rgb(197, 203, 161);
+            grid-area: verde2;
+        }
+
+
+        #circulo4 {
+            background-color: rgb(212, 197, 227);
+            grid-area: lilas;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7">
+            <div class="circulo" id="circulo1"></div>
+            <div class="circulo" id="circulo2"></div>
+            <div class="circulo" id="circulo3"></div>
+            <div class="circulo" id="circulo4"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
